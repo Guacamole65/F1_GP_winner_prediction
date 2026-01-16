@@ -17,4 +17,9 @@ Phase 5 : Testing our model on our test dataset and assessing its performance us
 
 Phase 6 : Final touches to the model to improve the overall quality and computational efficiency of  the code.
 
-Note : I'm aware that the current version of my code is quite unreliable since the accuracy of the model is around 30-40%. This is because I used very simple/basic metrics to predict the position of the top 3 drivers. To have better accuracy, I'll add important features that seems a bit more 'niche' like grid position advantage. Another factor on which I can try and gain accuracy is the classifier used, switching to XGBoost or GradientBoosting.
+III/- How to use the code : 
+
+Prior to executing any command, run the entire code to make sure that there's no problem (nb : in order for this project to work, you need to have the FastF1 API installed). 
+Once the code is up and running, you can try predicting a race as follow : predict_winner('Name of the Grand Prix', 'year to predict', 'years of training') (e.g : predict_winner('Abu Dhabi Grand Prix', '2025', ('2022', '2023', '2024')). The more training years there are, the better our model performs (one should also take into account the change in regulations that might affect a team/driver).
+
+_Note : I'm aware that the current version of my code is quite unreliable since the accuracy of the model is around 30-40%. This is because I used very simple/basic metrics to predict the position of the top 3 drivers. To have better accuracy, I'll add important features that seems a bit more 'niche' like grid position advantage. Another factor on which I can try and gain accuracy is the classifier used, switching to XGBoost or GradientBoosting._
